@@ -863,4 +863,16 @@ body {
         padding-top: 5rem;
     }
 }
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem; /* Menos espacio lateral en móviles */
+    }
+    .navbar nav {
+        flex-direction: column; /* Apila logo y enlaces */
+        gap: 0.5rem;
+    }
+    .logo {
+        font-size: 1.2rem; /* Logo más pequeño en móvil */
+    }
+}
 
