@@ -98,11 +98,15 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
     gap: 2rem;
     align-items: center;
-    flex-wrap: wrap;
 }
-
 .navbar a {
     text-decoration: none;
     color: #333;
@@ -363,7 +367,26 @@ body {
     font-size: 0.9rem;
     align-self: flex-start;
 }
+.menu-toggle.large-bars {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;  /* Ancho total grande */
+    height: 30px; /* Alto total grande */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+}
 
+.bar-thick {
+    width: 100%;
+    height: 6px; /* Líneas muy gruesas */
+    background-color: #667eea; /* Tu color principal */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-container {
@@ -390,11 +413,36 @@ body {
         padding: 1.5rem;
         margin: 1rem;
     }
-    
+    .menu-toggle.large-bars {
+        display: flex;
+    }
     .navbar nav {
         gap: 1rem;
     }
-    
+    .nav-links {
+        position: fixed;
+        left: -100%; /* Escondido a la izquierda */
+        top: 0;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        width: 70%;
+        height: 100vh;
+        padding-top: 100px;
+        transition: 0.4s ease;
+        box-shadow: -10px 0 20px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        left: 0; /* Desliza hacia adentro */
+    }
+
+    /* Ajuste para que el logo no se vea minúsculo */
+    .logo {
+        font-size: 1.4rem;
+    }
+}
     .footer-content {
         gap: 1rem;
         flex-direction: column;
@@ -403,7 +451,7 @@ body {
     .projects-grid {
         grid-template-columns: 1fr;
     }
-}
+
 
 /* Modal Styles */
 .modal {
@@ -689,7 +737,6 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     font-size: 2rem;
-    font-size: clamp(1.2rem, 5vw, 2rem); /* Tamaño fluido: mínimo 1.2rem, máximo 2rem */
     word-wrap: break-word;
     text-align: center;
 }
@@ -863,7 +910,7 @@ body {
         padding-top: 5rem;
     }
 }
-@media (max-width: 335px) {
+@media (max-width: 480px) {
     .navbar {
         padding: 1rem; /* Menos espacio lateral en móviles */
     }
@@ -875,4 +922,3 @@ body {
         font-size: 1.2rem; /* Logo más pequeño en móvil */
     }
 }
-
