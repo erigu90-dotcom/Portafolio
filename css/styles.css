@@ -863,7 +863,7 @@ body {
         padding-top: 5rem;
     }
 }
-@media (max-width: 315px) {
+@media (max-width: 335px) {
     .navbar {
         padding: 1rem; /* Menos espacio lateral en móviles */
     }
