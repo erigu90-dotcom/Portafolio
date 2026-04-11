@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Erik Rincon - Software Developer & Product Strategist</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/modal.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+        <a href="index.html"><h1 class="logo"><span>{Erguz90}</span></h1></a>
+        <a href="index.html">Inicio</a>
+        <a href="portfolio.html">Portafolio</a>
+        <a href="services.html">Servicios</a>
+        <a href="contact.html">Contacto</a>
+    </nav>
+</header>
+
+<section class="portfolio glass">
+    <h1>Portafolio</h1>
+    <p class="portfolio-subtitle">Proyectos destacados y soluciones desarrolladas</p>
+    
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image"> 
+                <img src="css/img/proyecto1/1.png" alt="Proyecto 1">
+            </div>
+            <div class="project-content">
+                <h3>Vectorización y Diseño Gráfico</h3>
+                <p>Colección de trabajos de vectorización profesional utilizando Adobe Illustrator. Incluye logos, ilustraciones y elementos gráficos convertidos a formato vectorial de alta calidad para impresión y uso digital.</p>
+                <div class="project-tags">
+                    <span class="tag">Adobe Illustrator</span>
+                    <span class="tag">Vectorización</span>
+                </div>
+                <a href="#" class="btn btn-small" onclick="openModal('proyecto1')">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="css/img/proyecto2/1.png" alt="Proyecto 2">
+            </div>
+            <div class="project-content">
+                <h3>Identidad Visual - LuisCar Taller de Mecánica</h3>
+                <p>Diseño completo de identidad visual para LuisCar Taller de Mecánica. Incluye creación de logo principal, versiones monocromáticas, aplicaciones en diferentes formatos y elementos gráficos para papelería y señalización.</p>
+                <div class="project-tags">
+                    <span class="tag">Logo Design</span>
+                    <span class="tag">Branding</span>
+                    <span class="tag">Adobe Illustrator</span>
+                </div>
+                <a href="#" class="btn btn-small" onclick="openModal('proyecto2')">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="css/img/proyecto3/1.png" alt="Video Promocional Kermés">
+            </div>
+            <div class="project-content">
+                <h3>Diseño y Video Promocional - Kermés</h3>
+                <p>Proyecto integral para la Fundación Country Club de Bogotá que combina diseño gráfico, diagramación de piezas visuales y producción de video vertical para redes. Incluye creación de material impreso y digital, además de dos versiones de video optimizadas para smartphone.</p>
+                <div class="project-tags">
+                    <span class="tag">Diseño Gráfico</span>
+                    <span class="tag">Video</span>
+                    <span class="tag">Cap Cut</span>
+                    <span class="tag">Editorial</span>
+                </div>
+                <a href="#" class="btn btn-small" onclick="openModal('proyecto3')">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="css/img/proyecto4/1.png" alt="Papelería Country Club de Bogotá">
+            </div>
+            <div class="project-content">
+                <h3>Branding y Papelería - Country Club de Bogotá</h3>
+                <p>Creación de logo, tarjetas y brochure de servicios para Country Club de Bogotá, con diseño editorial y piezas gráficas verticales para impresión y redes.</p>
+                <div class="project-tags">
+                    <span class="tag">Adobe Illustrator</span>
+                    <span class="tag">Photoshop</span>
+                    <span class="tag">Diseño</span>
+                </div>
+                <a href="#" class="btn btn-small" onclick="openModal('proyecto4')">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 5">
+            </div>
+            <div class="project-content">
+                <h3>Proyecto 5</h3>
+                <p>Descripción breve del proyecto. Tecnologías utilizadas y resultados logrados.</p>
+                <div class="project-tags">
+                    <span class="tag">SQL</span>
+                    <span class="tag">Backend</span>
+                </div>
+                <a href="#" class="btn btn-small">Ver Proyecto</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://via.placeholder.com/300x200" alt="Proyecto 6">
+            </div>
+            <div class="project-content">
+                <h3>Proyecto 6</h3>
+                <p>Descripción breve del proyecto. Tecnologías utilizadas y resultados logrados.</p>
+                <div class="project-tags">
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">Python</span>
+                </div>
+                <a href="#" class="btn btn-small">Ver Proyecto</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Proyecto</h2>
+        <div id="modalImages" class="modal-images">
+            <!-- Las imágenes se cargarán aquí dinámicamente -->
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p><span class="copyright-icon">©</span> 2026 Erik Rincon | Bogotá, Colombia</p>
+        <div class="footer-contact">
+            <p><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 0.5rem; fill: currentColor;"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.2.48 2.5.74 3.85.74a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.26 2.65.74 3.85a1 1 0 01-.21 1.11l-2.41 2.41z"/></svg>+57 (350) 446 15 07 | +57 305 372 0808</p>
+            <p><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 18px; height: 18px; margin-right: 0.5rem; fill: currentColor;"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.99l-8 4.99-8-4.99V6l8 4.99L20 6v2.99z"/></svg>erigu90@gmail.com | letaldevi@gmail.com</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/erguz90/" target="_blank" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0Z"/>
+                </svg>
+            </a>
+            <a href="https://www.behance.net/erigu900202/" target="_blank" title="Behance">
+                <img src="css/img/behance.png" alt="Behance" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
