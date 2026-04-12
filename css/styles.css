@@ -915,7 +915,7 @@ body {
         padding: 1rem; /* Menos espacio lateral en móviles */
     }
     .navbar nav {
-        flex-direction: column; /* Apila logo y enlaces */
+        justify-content: space-between;
         gap: 0.5rem;
     }
     .logo {
