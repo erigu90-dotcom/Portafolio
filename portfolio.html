@@ -6,16 +6,26 @@
     <title>Portafolio | Erik Rincon - Software Developer & Product Strategist</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/modal.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
 <header class="navbar">
     <nav>
-        <a href="index.html"><h1 class="logo"><span>{Erguz90}</span></h1></a>
-        <a href="index.html">Inicio</a>
-        <a href="portfolio.html">Portafolio</a>
-        <a href="services.html">Servicios</a>
-        <a href="contact.html">Contacto</a>
+        <div class="logo"> {Erguz90}<span>.</span> </div>
+        
+        <button class="menu-toggle large-bars" id="mobile-menu">
+            <span class="bar-thick"></span>
+            <span class="bar-thick"></span>
+            <span class="bar-thick"></span>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="services.html">Servicios</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
     </nav>
 </header>
 
@@ -150,6 +160,6 @@
         </div>
     </div>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>
