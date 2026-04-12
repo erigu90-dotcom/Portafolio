@@ -442,16 +442,12 @@ body {
     .logo {
         font-size: 1.4rem;
     }
-}
+
     .footer-content {
         gap: 1rem;
         flex-direction: column;
     }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
+}
 
 /* Modal Styles */
 .modal {
