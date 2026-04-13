@@ -777,7 +777,7 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255,255,255,0.08);
+    background: rgb(255, 255, 255));
     border-radius: 50%;
     color: #fff;
     transition: background 0.3s ease;
